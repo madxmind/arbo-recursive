@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container_category {
+    border: 1px solid grey;
+    margin: 10px;
+    padding: 5px;
+}
+
+.category {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    overflow: auto;
+}
+
+ul.sub_category {
+    display: flex;
+}
+
+.container_category {
+    width: 100%;
+}
+
+.level_0 {
+    background-color: paleturquoise;
+}
+
+.level_1 {
+    background-color: yellowgreen;
+}
+
+.level_2 {
+    background-color: pink;
+}
+
+
+/* 
+https://getbootstrap.com/docs/4.0/layout/grid/
+1200 -  992 - 768 - 576 
+*/
+@media screen and (max-width: 768px) {
+    ul.sub_category {
+        flex-wrap: wrap;
+    }
+}
